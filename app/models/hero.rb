@@ -1,4 +1,5 @@
-# class Hero 
+class Hero < ActiveRecord::Base
+    belongs_to :team
 
 #     attr_accessor :name, :power, :biography
 
@@ -15,4 +16,4 @@
 #         HEROES
 #     end
 
-# end
+end
