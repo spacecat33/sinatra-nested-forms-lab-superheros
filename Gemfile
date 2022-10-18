@@ -3,22 +3,20 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem 'sinatra'
-gem 'rake'
+gem 'activerecord', :require => 'active_record'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+
+gem 'sinatra', '1.4.3'
+gem 'rake', '10.4.2'
 gem 'thin'
-gem 'require_all'
-gem 'activerecord', '5.2'
-gem 'sinatra-activerecord'
+gem 'shotgun', '0.9'
+gem 'pry', '0.10.3'
+gem 'require_all', '1.3.2'
+gem 'sqlite3'
+
 
 group :test do
-  gem 'rspec'
-  gem 'capybara'
+  gem 'rspec', '3.3.0'
+  gem 'capybara', '2.5.0'
   gem 'rack-test'
-end
-
-group :development do
-  gem 'shotgun'
-  gem 'pry'
-  gem 'tux'
-  gem 'sqlite3', '~> 1.3.6'
 end

@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_15_093104) do
+ActiveRecord::Schema.define(version: 2022_10_18_131406) do
 
-  create_table "heros", force: :cascade do |t|
+  create_table "superheros", force: :cascade do |t|
     t.string "name"
     t.string "power"
     t.string "biography"
